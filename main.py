@@ -34,7 +34,7 @@ def get_chatgpt_response(messages):
         messages=[
             {
                 "role": "user",
-                "content": "The following message is from a recording. Analyze it and just respond with NOTHING MORE than a json that contains the product type and delivery date. If any of those is not present return null in the corresponfing field. For product type, select the best fit from this list: " + list,
+                "content": "The following message is from a recording. Analyze it and just respond with NOTHING MORE than a json that contains the product type as \"product\" and delivery date as \"date\". If any of those is not present return null in the corresponfing field. For product type, select the best fit from this list: " + list,
             },
             {
                 "role": "system",
